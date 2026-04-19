@@ -1,0 +1,18 @@
+{
+  "inherits": ["cortex-m4"],
+  "build-tags": [
+    "stm32f3disco",
+    "stm32f3discovery",
+    "stm32f303",
+    "stm32f3",
+    "stm32"
+  ],
+  "serial": "uart",
+  "linkerscript": "targets/stm32f303vct6.ld",
+  "extra-files": [
+    "src/device/stm32/stm32f303.s"
+  ],
+  "flash-method": "openocd",
+  "openocd-interface": "stlink-v2",
+  "openocd-target": "stm32f3x"
+}
